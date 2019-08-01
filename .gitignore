@@ -16,3 +16,5 @@ todo.md
 Projects/
 
 .fabd
+*.sublime-project
+*.sublime-workspace
