@@ -1,6 +1,7 @@
 #
 #  !!! exclude LICENSE file if any
 #
+*.sublime-license
 
 Package Control.cache/
 Package Control.merged-ca-bundle

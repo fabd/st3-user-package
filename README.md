@@ -9,14 +9,15 @@ Nothing to see here. Just a backup of my ST 3 config.
 $ cd ~/.config/sublime-text-3/Packages/User
 ```
 
-## Sublime Config
+## Configs
 
+**Sublime** : 
 [Color Schemes](https://www.sublimetext.com/docs/3/color_schemes.html) -
 [Project files](https://www.sublimetext.com/docs/3/projects.html) -
 [Scope naming](https://www.sublimetext.com/docs/3/scope_naming.html) -
 [Themes](https://www.sublimetext.com/docs/3/themes.html)
 
-**Plugin configs**
+**Plugins** : 
 [Bracket Highlighter](http://facelessuser.github.io/BracketHighlighter/usage/)- 
 [JsPrettier](https://www.npmjs.com/package/sublime-js-prettier#settings)
 
