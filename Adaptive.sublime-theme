@@ -1,0 +1,17 @@
+{
+  // exemples
+  // https://forum.sublimetext.com/t/git-integration-side-bar-badges/42397/17
+
+	"rules": [
+    // Documentation at https://www.sublimetext.com/docs/3/dev/themes.html
+    {
+        "class": "vcs_status_badge",
+        "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
+        "layer0.texture": "Theme - Default/common/status_modified.png",
+        // "layer0.tint": "color(var(--orangish) min-contrast(var(--background) 2.5))",
+        "layer0.tint": "color(#e0600080)",
+        "layer0.opacity": 1.0,
+        "content_margin": 6
+    },
+	]
+}

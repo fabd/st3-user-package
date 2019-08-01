@@ -1,0 +1,18 @@
+{
+    "tag_mode": [
+
+        {
+            "mode": "xhtml",
+            "syntax": [
+              // FAB
+              "Vue Component"
+            ],
+        }
+    ],
+
+    // Style to use for matched tags
+    // "tag_style": {
+    //     "xhtml": "tag",
+    //     "html": "tag"
+    // },
+}
