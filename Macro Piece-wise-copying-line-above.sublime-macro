@@ -1,0 +1,89 @@
+[
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"commands":
+			[
+				[
+					"enter_visual_mode",
+					null
+				],
+				[
+					"vi_eval",
+					{
+						"action_args": null,
+						"action_command": null,
+						"motion_args":
+						{
+							"by": "stops",
+							"empty_line": true,
+							"extend": true,
+							"forward": true,
+							"punct_end": true,
+							"word_end": true
+						},
+						"motion_clip_to_line": true,
+						"motion_command": "move",
+						"motion_inclusive": true,
+						"motion_mode": 0
+					}
+				],
+				[
+					"vi_eval",
+					{
+						"action_args":
+						{
+						},
+						"action_command": "vi_copy",
+						"motion_args": null,
+						"motion_clip_to_line": false,
+						"motion_command": null,
+						"motion_inclusive": false,
+						"motion_mode": 0
+					}
+				]
+			]
+		},
+		"command": "sequence"
+	},
+	{
+		"args":
+		{
+			"action_args": null,
+			"action_command": null,
+			"motion_args":
+			{
+				"by": "lines",
+				"extend": true,
+				"forward": true
+			},
+			"motion_clip_to_line": false,
+			"motion_command": "move",
+			"motion_inclusive": false,
+			"motion_mode": 0
+		},
+		"command": "vi_eval"
+	},
+	{
+		"args":
+		{
+		},
+		"command": "vi_paste_right"
+	},
+	{
+		"args":
+		{
+			"register": "\"",
+			"to": "hardeol"
+		},
+		"command": "move_to"
+	}
+]

@@ -1,0 +1,10 @@
+[
+	{
+		"args": null,
+		"command": "save"
+	},
+	{
+		"args": null,
+		"command": "exit_insert_mode"
+	}
+]

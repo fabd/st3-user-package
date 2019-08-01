@@ -1,0 +1,29 @@
+[
+	{
+		"args":
+		{
+			"commands":
+			[
+				[
+					"move",
+					{
+						"by": "characters",
+						"forward": true,
+						"register": "\""
+					}
+				],
+				[
+					"insert",
+					{
+						"characters": "qsdqsd"
+					}
+				],
+				[
+					"exit_insert_mode",
+					null
+				]
+			]
+		},
+		"command": "sequence"
+	}
+]
