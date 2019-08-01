@@ -1,0 +1,71 @@
+[
+  // ctrl+d  same as ctrl+del
+  { "keys": ["ctrl+d"], "command": "delete_word", "args": { "forward": true } },
+
+  // faB: utlise : en qwerty sinon le shift /  n'est pas dispo
+  { "keys": ["ctrl+:"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
+
+  // emulating VI macro
+  { "keys": ["ctrl+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Piece-wise-copying-line-above.sublime-macro"}},
+
+  //{ "keys": ["ctrl+s"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Escape-Vintage-and-Save.sublime-macro"}},
+
+  // move by paragraph (to next empty line)
+  {"keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+  {"keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+  {"keys": ["shift+alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},
+  {"keys": ["shift+alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true}},
+
+  // Sublime Alignment
+  { "keys": ["ctrl+alt+a"], "command": "alignment" },
+
+  // Vintage?'s undo making me crazy > use same as ctrl-z
+  //{ "keys": ["u"], "command": "undo" },
+
+  // Swap these defaults
+  //{ "keys": ["ctrl+r"], "command": "redo_or_repeat" },
+  // ...
+  //{ "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+  //{ "keys": ["ctrl+shift+r"], "command": "goto_symbol_in_project" },
+
+  //
+  //  REMAPS  (comme Vim, et confort)
+  // 
+  //  Remplace ces defaults:
+  //    ctrl t           transpose 
+  //    ctrl j           join lines
+  //    f9 et ctrl-f9    sort lines (on s'en tappe)
+  //
+  // { "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["ctrl+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  
+  // F5 pour Save car la VM très lent
+  { "keys": ["f5"], "command": "save" },
+  // { "keys": ["f5"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Escape-Vintage-and-Save.sublime-macro"}},
+
+  // Toggle the side bar (comme dans Nautilus)
+  { "keys": ["f9"], "command": "toggle_side_bar" },
+  // ... Reveal current file in the sidebar tree
+  { "keys": ["ctrl+f9"], "command": "reveal_in_side_bar" },
+
+  // utile pour développer color scheme
+  { "keys": ["ctrl+shift+s"], "command": "show_scope_name" },
+
+  //
+  //  DISABLE SOME DEFAULTS
+  //
+  { "keys": ["ctrl+q"], "command": "" },
+
+  //
+  //  PLUGINS
+  //
+  { "keys": ["ctrl+shift+f"], "command": "js_prettier" },
+
+  //
+  //  EXPLICIT BINDINGS (docs)
+  //
+  // jump to matching brace
+  { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} }
+
+]
