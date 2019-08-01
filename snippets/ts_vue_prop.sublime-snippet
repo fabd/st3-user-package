@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+@Prop({ default: ${1:false} }) readonly propA!: ${2:boolean};
+]]></content>
+  <tabTrigger>prop</tabTrigger>
+  <scope>source.js, source.ts</scope>
+  <description>@Prop</description>
+</snippet>

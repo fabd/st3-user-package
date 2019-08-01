@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+computed: {
+  ${1:computedPropertyName}() {
+    ${0}
+  }
+},
+]]></content>
+  <tabTrigger>computed</tabTrigger>
+  <scope>source.js</scope>
+  <description>Vue Instance "computed"</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+${1:methodName}(${2:arguments}) {
+  ${0}
+}
+]]></content>
+  <tabTrigger>fnm</tabTrigger>
+  <scope>source.js</scope>
+  <description>Method Shorthand (ES2015)</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+@include font(${1:12px});$0
+]]></content>
+  <tabTrigger>@font</tabTrigger>
+    <description>@mixin font($size, $lineHeight, $weight, $family)</description>
+    <scope>source.css, source.scss, source.ts</scope>
+</snippet>

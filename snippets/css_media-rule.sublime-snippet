@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+@media only screen and (${1:max}-width: ${2:600}px) {
+  ${0}
+}
+]]></content>
+  <tabTrigger>@media</tabTrigger>
+    <description>CSS - @media {}</description>
+    <scope>source.css, source.less, source.scss, source.stylus</scope>
+</snippet>

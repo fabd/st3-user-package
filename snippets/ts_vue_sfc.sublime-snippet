@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[
+<template>
+  $2
+</template>
+
+<script lang="ts">
+import { Component, Vue/*, Prop*/ } from 'vue-property-decorator';
+
+@Component
+export default class $1 extends Vue {
+  //@Prop({ default: false }) public someVar!: boolean;
+}
+</script>
+
+<style lang="scss">
+//
+</style>
+]]></content>
+  <tabTrigger>vuets</tabTrigger>
+  <scope>text.html.vue</scope>
+  <description>Vue template</description>
+</snippet>

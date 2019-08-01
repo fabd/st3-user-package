@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+@Watch('${1:var}')
+on${2:Var}Changed(val: string, oldVal: string) { 
+  console.log('$2 CHANGED %o', this.$1);
+  $0
+}
+]]></content>
+  <tabTrigger>watch</tabTrigger>
+  <scope>source.js, source.ts</scope>
+  <description>@Watch</description>
+</snippet>

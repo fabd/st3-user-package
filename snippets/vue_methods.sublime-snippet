@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+methods: {
+  ${0}
+},
+]]></content>
+  <tabTrigger>methods</tabTrigger>
+  <scope>source.js</scope>
+  <description>Vue Instance "methods"</description>
+</snippet>
