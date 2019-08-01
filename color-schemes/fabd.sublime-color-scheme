@@ -1,0 +1,168 @@
+{
+    "name": "fabd's Color Scheming",
+    "globals":
+    {
+        "background":  "#f0f0f0",
+        "block_caret": "#202020ff",
+        "caret":       "#202020ff",
+        "foreground":  "#404040",
+
+      // http://www.sublimetext.com/docs/3/color_schemes.html#global_settings-gutter
+        "gutter_foreground": "#c0c0c0",
+
+        "line_diff_added": "#20802060",
+        "line_diff_modified": "#00000000", // disable
+        "line_diff_deleted": "#80000080",
+
+      // A priori non utilisé => cf. BracketHighlighter plugin
+      // http://www.sublimetext.com/docs/3/color_schemes.html#global_settings-brackets
+        "brackets_options": "bold",
+        "brackets_foreground": "#f0f",
+        "bracket_contents_foreground": "#ff0",
+
+        "selection":   "#ffffff",          // bg de la sélection
+        "selection_border_width": "0",
+        "inactive_selection": "#ff8000",
+
+        "highlight":   "#65eafc",          // "other" matches
+        "find_highlight": "#65eafc",
+        "find_highlight_foreground": "#ff0000",
+
+        "tags_options": "squiggly_underline",
+        "tags_foreground": "#ff00ff",
+    },
+    "variables":
+    {
+        "bleu":        "#1044d4",  // entities
+        "kw":          "#202021", //"#7028a0",  // keyword
+        "mauve":       "#972885",
+      //"mauveclair"    #a5008f
+        "noir":        "#202020",  // default text
+        "ope":         "#ff0000",  // assignments (= ==)
+        "cyan":        "#166c8b",  // bleu cyan
+        "rouge":       "#c4042d",
+        "self":        "#cc4400",  // self:: this
+        "sp":          "#b4041d",  // special values (false, true, null, ...)
+        "str":         "#1044d4",  // strings
+        "vert":        "#208030",  // comments
+
+        "css_class":   "#505254",
+        "css_none":    "#202020",
+        "css_prop":    "#c00000",
+        "css_spec":    "#a54903",  // orange/brun
+    },
+    "rules":
+    [
+        // exemple
+        // { "name": "...", "scope": "keyword", "font_style":"bold italic" }
+
+// BracketHighlighter plugin (cf. )
+{ "scope": "brackethighlighter.tag",       "foreground":"#ccc" },  // xhtml tags
+{ "scope": "brackethighlighter.curly",     "foreground":"#c4042d" },  // js blocks
+{ "scope": "brackethighlighter.quote",     "foreground":"#1044d4" },  // single/double/regex quotes
+
+{ "scope": "comment",                      "foreground":"var(vert)", "font_style":"italic" },
+
+{ "scope": "constant",                     "foreground":"#00f0a0" },
+{ "scope": "constant.numeric",             "foreground":"#f00000" },
+{ "scope": "constant.numeric.css",         "foreground":"var(css_none)" },
+{ "scope": "constant.language",            "foreground":"var(sp)", "font_style":"italic" },
+{ "scope": "constant.character.escape",    "foreground":"#202020" },
+{ "scope": "constant.other",               "foreground":"var(sp)" },
+{ "scope": "constant.other.color",         "foreground":"var(css_none)" }, // css
+
+{ "scope": "entity.name",                  "foreground":"var(bleu)" },
+{ "scope": "entity.name.type.class",       "foreground":"var(bleu)" }, // ts class
+{ "scope": "entity.other.inherited-class", "foreground":"var(bleu)" }, // ts class
+{ "scope": "entity.name.function",         "foreground":"#0000a0"},
+{ "scope": "entity.name.section",          "foreground":"#202020" },
+{ "scope": "entity.name.tag",              "foreground":"#800080"/*, "font_style": "bold"*/ },
+{ "scope": "entity.name.tag.css",          "foreground":"#202020", "font_style": "bold" },
+
+{ "scope": "entity.other.attribute-name",  "foreground":"#a54903" }, // html attrs
+{ "scope": "entity.other.attribute-name.css",       "foreground":"var(css_class)" }, // sass &__class
+{ "scope": "entity.other.attribute-name.class.css", "foreground":"var(css_class)", "font_style": "normal" },
+{ "scope": "entity.other.attribute-name.html", "foreground":"#a54903" },
+{ "scope": "entity.other.pseudo-class.css", "foreground":"var(css_spec)", "font_style": "normal" },
+// { "scope": "entity.other.attribute-name.id.html", "foreground":"#202020", "font_style": "" },
+
+{ "scope": "invalid",                      "foreground":"#202020", "font_style": "underline" },
+{ "scope": "invalid.deprecated",           "foreground":"#202020" },
+
+// { "scope": "keyword",                      "foreground":"var(kw)" },
+{ "scope": "keyword.control",              "foreground":"var(kw)" },
+{ "scope": "keyword.control.at-rule",      "foreground":"var(css_spec)" }, // css
+{ "scope": "keyword.declaration",          "foreground":"#202020" },
+{ "scope": "keyword.operator",             "foreground":"#808080" }, // new
+{ "scope": "keyword.operator.ampersand.sass", "foreground":"#c00000" },
+{ "scope": "keyword.other.phpdoc.php",     "foreground":"#167c9b" },
+{ "scope": "keyword.other.unit.css",       "foreground":"var(css_none)" },
+// { "scope": "keyword.operator.assignment",  "foreground":"var(kw)" }, // new
+
+{ "scope": "meta.property.object",         "foreground":"#800080" },
+{ "scope": "meta.function-call",           "foreground":"#a5008f" },
+{ "scope": "meta.mapping.key.json",        "foreground":"var(rouge)" },
+{ "scope": "meta.mapping.value.json",      "foreground":"var(comment)" },
+// { "scope": "meta.object-literal.key.js",   "foreground":"#404040", "font_style":"italic" },
+// { "scope": "meta.object-literal.key.ts",   "foreground":"#404040", "font_style":"italic" },
+{ "scope": "meta.tag.custom.html",         "foreground":"#404040", "font_style":"underline" },
+
+{ "scope": "punctuation.definition.attribute", "foreground":"#c00000" },
+{ "scope": "punctuation.definition.attribute.html", "foreground":"#202020" },
+{ "scope": "punctuation.definition.block.ts", "foreground":"var(rouge)" },
+{ "scope": "punctuation.definition.tag.begin.html", "foreground":"#800080" },
+{ "scope": "punctuation.definition.tag.end.html",   "foreground":"#800080" },
+{ "scope": "punctuation.definition.template.begin.html", "foreground":"var(rouge)" },      // {{ vue }}
+{ "scope": "punctuation.definition.template.end.html",   "foreground":"var(rouge)" },      // {{ vue }}
+{ "scope": "punctuation.section",          "foreground": "#202020" },
+// { "scope": "punctuation.separator.key-value.html", "foreground":"#ff0000" },
+
+{ "scope": "source.scss",                  "foreground":"#505050" },
+
+{ "scope": "storage",                      "foreground":"#0000ff" }, // private static function class const
+{ "scope": "storage.modifier",             "foreground":"#202020", "font_style": "italic" },
+{ "scope": "storage.modifier.ts",          "foreground":"var(rouge)", "font_style": "italic" }, // ts "public" "readonly"
+{ "scope": "storage.type",                 "foreground":"#606162" },
+{ "scope": "storage.type.function",        "foreground":"#202020", "font_style": "italic" },
+//{ "scope": "storage.type.function.arrow",  "foreground":"#663399", "font_style": "bold" },
+{ "scope": "storage.type.property",        "foreground":"var(rouge)", "font_style": "italic" }, // ts "get"
+
+// { "scope": "string",                       "foreground":"#c4042d" },
+{ "scope": "string.quoted.double.html",    "foreground":"#0000a0" },
+{ "scope": "string.quoted.double.js",      "foreground":"var(str)" },
+{ "scope": "string.quoted.single",         "foreground":"var(str)" },
+{ "scope": "string.quoted.single.php",     "foreground":"var(str)" },
+
+{ "scope": "support",                      "foreground":"var(kw)" },
+{ "scope": "support.class",                "foreground":"#a5008f" },
+{ "scope": "support.constant.property-value",   "foreground":"var(css_none)" },
+{ "scope": "support.type.primitive.ts",    "foreground":"var(sp)", "font_style":"italic" },
+{ "scope": "support.type.property-name.css",   "foreground":"var(css_prop)" },
+
+{ "scope": "text.html.vue",                "foreground":"#404040" },
+
+{ "scope": "variable",                     "foreground":"var(mauve)"},
+{ "scope": "variable.declaration.sass",    "foreground":"var(css_spec)"},
+{ "scope": "variable.function.js",         "foreground":"#0000a0"},
+{ "scope": "variable.function.sass",       "foreground":"#0000a0"},
+{ "scope": "variable.language",            "foreground":"var(self)" },
+{ "scope": "variable.language.this",       "foreground":"#a5008f", "font_style":"bold" },
+{ "scope": "variable.other",               "foreground":"var(mauve)" },
+{ "scope": "variable.other.sass",          "foreground":"var(css_none)" },
+//{ "scope": "variable.parameter",           "foreground":"var(bleu)", "font_style":"italic" },
+{ "scope": "variable.function",            "foreground":"#202020" },
+
+// html
+// { "scope": "entity.name.tag.custom.html",           "foreground":"#208020" }, // vue tags
+{ "scope": "entity.name.tag.other.html",            "foreground":"#800080" }, // custom tags
+{ "scope": "entity.name.tag.structure.any.html",    "foreground":"#8000a0" },
+{ "scope": "text.html.basic",                       "foreground":"#24292e" },
+
+// vue
+// { "scope": "text.html.vue",                         "foreground":"#808080"/*, "font_style":"bold"*/ },
+//{ "scope": "entity.name.tag.template.html",         "foreground":"#c00000", "font_style":"bold" },
+//{ "scope": "entity.name.tag.script.html",           "foreground":"#c00000", "font_style":"bold" },
+//{ "scope": "entity.name.tag.style.html",            "foreground":"#c00000", "font_style":"bold" },
+
+    ]
+}
