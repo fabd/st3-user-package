@@ -28,23 +28,16 @@ $ cd ~/.config/sublime-text-3/Packages/User
 * [AllAutocomplete](https://github.com/alienhard/SublimeAllAutocomplete)
 
 
-## Cheatsheet
+## Notes
 
-Shortcut  | What
---------  | ----
-ctrl+d    | Same as ctrl+DEL (wasn't that a default !?)
-ctrl+:    | (AZERTY)  comment line(s)
-ctrl+/    | (AZERTY)  comment /* selection */
-...       | ...
-ctrl+l    | "piece wise copying of line above"
-...       | ...
-alt+up/down | move to next paragraph (empty line)
-...       | ...
-F5        | save
-F9        | toggle sidebar
-ctrl+F9   | reveal in sidebar
-...       | ...
-ctrl+shift+f | [Prettier](https://github.com/jonlabelle/SublimeJsPrettier): format file / selection
+- Always edit **Settings - User** to configure packages. Changes made to **Settings - Default** are stored outside of the User folder and won't be synced!
 
+## Restore / Install to new setup
 
+- Install Sublime Text 3
+- Launch > Ctrl Shift P > Install Package Control > Quit
+- `rm -rf ~/.config/sublime-text-3/Packages/User/` (git clone won't overwrite folder)
+- `git clone https://github.com/fabd/st3-user-package.git ~/.config/sublime-text-3/Packages/User/`
+- Launch Sublime Text -- it will restore packages (cf. `Package Control.sublime-settings` file)
 
+- Review/Push/pull config updates with eg. Sublime Merge
