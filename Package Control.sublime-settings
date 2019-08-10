@@ -16,6 +16,8 @@
 		"MarkdownEditing",
 		"Package Control",
 		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-stylelint",
 		"Surround",
 		"TypeScript",
 		"Vintage Surround",
