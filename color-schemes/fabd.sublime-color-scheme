@@ -78,6 +78,9 @@
 { "scope": "entity.name.section",          "foreground":"#202020" },
 { "scope": "entity.name.tag",              "foreground":"#800080"/*, "font_style": "bold"*/ },
 { "scope": "entity.name.tag.css",          "foreground":"#202020", "font_style": "bold" },
+{ "scope": "entity.name.tag.template",     "foreground":"#800080", "font_style": "bold" }, // Vue SFC
+{ "scope": "entity.name.tag.script",       "foreground":"#800080", "font_style": "bold" }, // Vue SFC
+{ "scope": "entity.name.tag.style",        "foreground":"#800080", "font_style": "bold" }, // Vue SFC
 
 { "scope": "entity.other.attribute-name",  "foreground":"#a54903" }, // html attrs
 { "scope": "entity.other.attribute-name.css",       "foreground":"var(css_class)" }, // sass &__class
