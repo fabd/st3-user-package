@@ -115,6 +115,7 @@
 { "scope": "punctuation.definition.template.begin.html", "foreground":"var(rouge)" },      // {{ vue }}
 { "scope": "punctuation.definition.template.end.html",   "foreground":"var(rouge)" },      // {{ vue }}
 { "scope": "punctuation.section",          "foreground": "#202020" },
+{ "scope": "punctuation.section.embedded", "foreground": "var(rouge)", "font_style": "bold" },
 { "scope": "punctuation.separator.combinator.css", "foreground": "var(rouge)" },
 // { "scope": "punctuation.separator.key-value.html", "foreground":"#ff0000" },
 
