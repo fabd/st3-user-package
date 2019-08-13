@@ -134,7 +134,7 @@
 
 // { "scope": "string",                       "foreground":"#c4042d" },
 { "scope": "string.quoted.double.html",    "foreground":"#0000a0" },
-{ "scope": "string.quoted.double.js",      "foreground":"var(str)" },
+{ "scope": "string.quoted.double.js",      "foreground":"var(rouge)" },
 { "scope": "string.quoted.single",         "foreground":"var(str)" },
 { "scope": "string.quoted.single.php",     "foreground":"var(str)" },
 
