@@ -27,6 +27,8 @@
 
   "allow_inline_formatting": true,
 
+  // disable the plug-in from automatically setting Prettier's "tabWidth / --tab-width" option, and adhere to the Prettier configured setting.
+  "disable_tab_width_auto_detection": true,
 
   // ----------------------------------------------------------------------
   // Prettier Options
@@ -52,6 +54,8 @@
     // If true, will use single instead of double quotes.
     // --------------------------------------------------------------------
     "singleQuote": false,
+
+    // "tabWitdh": 2,
     
     // --------------------------------------------------------------------
     // trailingComma
