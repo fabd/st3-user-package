@@ -1,0 +1,16 @@
+// SublimeLinter Settings - User
+// 
+// Notes
+//   - fix to run on .vue files, <script> section
+//   
+// Links
+//   https://github.com/SublimeLinter/SublimeLinter-eslint#using-eslint-with-plugins-eg-vue
+// 
+// 
+{
+  "linters": {
+    "eslint": {
+      "selector": "text.html.vue, source.js - meta.attribute-with-value"
+    }
+  }
+}

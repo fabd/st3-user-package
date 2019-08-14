@@ -17,6 +17,7 @@
 		"Package Control",
 		"Sass",
 		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"SublimeLinter-stylelint",
 		"Surround",
 		"TypeScript",
