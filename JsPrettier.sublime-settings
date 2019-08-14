@@ -12,6 +12,9 @@
   // 
   /////////////////////////////////////////////////////////////////////////
 
+  // utilise plutôt Ctrl Shift F
+  // "auto_format_on_save": true,
+
   // ----------------------------------------------------------------------
   // Allow Inline Formatting
   // ----------------------------------------------------------------------
@@ -42,49 +45,20 @@
 
   "prettier_options": {
 
-    "printWidth": 80,
+    // add .prettierrc.js to the project!
+    // "printWidth": 80,
 
-    // --------------------------------------------------------------------
-    // singleQuote
-    // --------------------------------------------------------------------
-    //
-    // @param {bool} "prettier_options.singleQuote"
-    // @default false
-    //
-    // If true, will use single instead of double quotes.
-    // --------------------------------------------------------------------
-    "singleQuote": false,
+    // add .prettierrc.js to the project!
+    // "singleQuote": false,
 
+    // add .prettierrc.js to the project!
     // "tabWitdh": 2,
     
-    // --------------------------------------------------------------------
-    // trailingComma
-    // --------------------------------------------------------------------
-    //
-    // @param {string} "prettier_options.trailingComma"
-    // @default "none"
-    //
-    // Controls the printing of trailing commas wherever possible.
-    //
-    // Valid options:
-    //
-    // "none" - No trailing commas
-    // "es5"  - Trailing commas where valid in ES5 (objects, arrays, etc)
-    // "all"  - Trailing commas wherever possible (function arguments)
-    // --------------------------------------------------------------------
-    "trailingComma": "es5",
+    // add .prettierrc.js to the project!
+    // "trailingComma": "es5",
 
-    // --------------------------------------------------------------------
-    // semi
-    // --------------------------------------------------------------------
-    //
-    // @param {bool} "prettier_options.semi"
-    // @default true
-    //
-    // Whether to add a semicolon at the end of every line (semi: true), or
-    // only at the beginning of lines that may introduce ASI failures (semi: false)
-    // --------------------------------------------------------------------
-    "semi": true,
+    // add .prettierrc.js to the project!
+    // "semi": true,
   },
 
 }
