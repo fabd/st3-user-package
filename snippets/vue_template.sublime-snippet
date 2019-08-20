@@ -4,66 +4,63 @@
 </template>
 
 <script>
-import foo from './foo.js'
+import foo from "./foo.js";
 
 export default {
+  name: "${1:${TM_FILENAME/(.+)\..+|.*/$1/:component_name}}",
 
-  name: '${1:${TM_FILENAME/(.+)\..+|.*/$1/:component_name}}',
+  props: {
+    // prop must be required ...
+    propA: { type: String, required: true },
 
-  mixins: [ myMixin ],
+    // .. or have a default value
+    propB: { type: Number, default: 0 },
+
+    // multiple possible types
+    propC: { type: [String, Number], default: null },
+
+    // object/array defaults should be returned from a factory function
+    propE: {
+      type: Object,
+      default: function() {
+        return { message: "hello" };
+      },
+    },
+
+    // custom validator function
+    propF: {
+      type: String,
+      required: true,
+      validator: function(value) {
+        // The value must match one of these strings
+        return ["success", "warning", "danger"].indexOf(value) !== -1;
+      },
+    },
+  },
 
   data() {
     return {
       ${0}
-    }
-  },
-
-  props: {
-    // basic type check (`null` means accept any type)
-    propA: Number,
-
-    // multiple possible types
-    propB: [String, Number],
-    
-    // a required string
-    propC: { type: String, required: true },
-    
-    // a number with default value
-    propD: { type: Number, default: 100 },
-    
-    // object/array defaults should be returned from a
-    // factory function
-    propE: { type: Object, default: function () {
-      return { message: 'hello' } }
-    },
-    
-    // custom validator function
-    propF: {
-      validator: function (value) {
-        return value > 10
-      }
-    }
+    };
   },
 
   computed: {
     someVar() {
-      // this.someVar
-    }
+      return "test";
+    },
   },
 
-  watch: {
+  watch: {},
 
-  },
+  // lifecycle methods
+  mounted() {},
 
   methods: {
-
+    dontUseArrowFunctions() {
+      // ...
+    },
   },
-
-  // life cycle events
-  beforeMount() { },
-  mounted() { },
-
-
+};
 </script>
 
 <style>
