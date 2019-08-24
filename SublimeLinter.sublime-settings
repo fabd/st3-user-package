@@ -14,7 +14,7 @@
     },
 
     "stylelint": {
-      "selector": "text.html.vue, source.css"
+      "selector": "text.html.vue, source.css, source.scss"
     }
   }
 }
