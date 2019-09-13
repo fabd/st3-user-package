@@ -34,6 +34,7 @@
     "variables":
     {
         "bleu":        "#1044d4",  // entities
+        "bleudark":    "#072aa7",  // bleu foncé désaturé
         "kw":          "#202021", //"#7028a0",  // keyword
         "mauve":       "#972885",
       //"mauveclair"    #a5008f
@@ -75,6 +76,7 @@
 { "scope": "entity.name.type.class",       "foreground":"var(bleu)" }, // ts class
 { "scope": "entity.other.inherited-class", "foreground":"var(bleu)" }, // ts class
 { "scope": "entity.name.function",         "foreground":"#0000a0"},
+ { "scope": "entity.name.function.sass",    "foreground":"var(bleudark)" },
 { "scope": "entity.name.section",          "foreground":"#202020" },
 { "scope": "entity.name.tag",              "foreground":"#800080"/*, "font_style": "bold"*/ },
 { "scope": "entity.name.tag.css",          "foreground":"#202020", "font_style": "bold" },
@@ -86,7 +88,7 @@
 { "scope": "entity.other.attribute-name.css",       "foreground":"var(css_class)" }, // sass &__class
 { "scope": "entity.other.attribute-name.class.css", "foreground":"var(css_class)", "font_style": "normal" },
 { "scope": "entity.other.attribute-name.html", "foreground":"#a54903" },
-{ "scope": "entity.other.pseudo-class.css", "foreground":"var(css_spec)", "font_style": "normal" },
+{ "scope": "entity.other.pseudo-class.css", "foreground":"#404245", "font_style": "bold" },
 // { "scope": "entity.other.attribute-name.id.html", "foreground":"#202020", "font_style": "" },
 
 { "scope": "invalid",                      "foreground":"#202020", "font_style": "underline" },
@@ -95,19 +97,26 @@
 // { "scope": "keyword",                      "foreground":"var(kw)" },
 { "scope": "keyword.control",              "foreground":"var(kw)" },
 { "scope": "keyword.control.at-rule",      "foreground":"var(css_spec)" }, // css
+// { "scope": "keyword.control.at-rule.sass", "foreground":"var(cyan)" }, // css
+{ "scope": "keyword.control.flow.conditional.sass", "foreground":"var(css_spec)" }, // css
+
 { "scope": "keyword.declaration",          "foreground":"#202020" },
 { "scope": "keyword.operator",             "foreground":"#808080" }, // new
-{ "scope": "keyword.operator.ampersand.sass", "foreground":"#c00000" },
+{ "scope": "keyword.operator.ampersand.sass", "foreground":"var(rouge)" },
+{ "scope": "keyword.operator.sass",        "foreground":"var(rouge)" }, // new
 { "scope": "keyword.other.phpdoc.php",     "foreground":"#167c9b" },
 { "scope": "keyword.other.unit.css",       "foreground":"var(css_none)" },
 // { "scope": "keyword.operator.assignment",  "foreground":"var(kw)" }, // new
 
-{ "scope": "meta.property.object",         "foreground":"#800080" },
-{ "scope": "meta.function-call",           "foreground":"#a5008f" },
+{ "scope": "meta.property.object",            "foreground":"#800080" },
+{ "scope": "meta.function-call",              "foreground":"#a5008f" },
+{ "scope": "meta.group.interpolation.sass",   "foreground":"var(css_spec)" },
 { "scope": "meta.mapping.key.json",        "foreground":"var(rouge)" },
 { "scope": "meta.mapping.value.json",      "foreground":"var(comment)" },
 // { "scope": "meta.object-literal.key.js",   "foreground":"#404040", "font_style":"italic" },
 // { "scope": "meta.object-literal.key.ts",   "foreground":"#404040", "font_style":"italic" },
+//{ "scope": "meta.selector.css",            "font_style":"bold" },
+
 { "scope": "meta.tag.custom.html",         "foreground":"#404040", "font_style":"underline" },
 
 { "scope": "punctuation.definition.attribute", "foreground":"#c00000" },
@@ -133,30 +142,30 @@
 { "scope": "storage.type.property",        "foreground":"var(rouge)", "font_style": "italic" }, // ts "get"
 
 // { "scope": "string",                       "foreground":"#c4042d" },
-{ "scope": "string.quoted.double.html",    "foreground":"#0000a0" },
-{ "scope": "string.quoted.double.js",      "foreground":"var(rouge)" },
-{ "scope": "string.quoted.single",         "foreground":"var(str)" },
-{ "scope": "string.quoted.single.php",     "foreground":"var(str)" },
+{ "scope": "string.quoted.double.html",      "foreground":"#0000a0" },
+{ "scope": "string.quoted.double.js",        "foreground":"var(rouge)" },
+{ "scope": "string.quoted.single",           "foreground":"var(str)" },
+{ "scope": "string.quoted.single.php",       "foreground":"var(str)" },
 
-{ "scope": "support",                      "foreground":"var(kw)" },
-{ "scope": "support.class",                "foreground":"#a5008f" },
+{ "scope": "support",                        "foreground":"var(kw)" },
+{ "scope": "support.class",                  "foreground":"#a5008f" },
 { "scope": "support.constant.property-value",  "foreground":"var(css_none)" },
 { "scope": "support.type.custom-property.css", "foreground":"#a5008f" }, // --css-var
-{ "scope": "support.type.primitive.ts",    "foreground":"var(sp)", "font_style":"italic" },
-{ "scope": "support.type.property-name.css",   "foreground":"var(css_prop)" },
+{ "scope": "support.type.primitive.ts",      "foreground":"var(sp)", "font_style":"italic" },
+{ "scope": "support.type.property-name.css", "foreground":"var(css_prop)" },
 
-{ "scope": "text.html.vue",                "foreground":"#404040" },
+{ "scope": "text.html.vue",                  "foreground":"#404040" },
 
-{ "scope": "variable",                     "foreground":"var(mauve)"},
-{ "scope": "variable.declaration.sass",    "foreground":"var(css_spec)"},
-{ "scope": "variable.function.js",         "foreground":"#0000a0"},
-{ "scope": "variable.function.sass",       "foreground":"#0000a0"},
-{ "scope": "variable.language",            "foreground":"var(self)" },
-{ "scope": "variable.language.this",       "foreground":"#a5008f", "font_style":"bold" },
-{ "scope": "variable.other",               "foreground":"var(mauve)" },
-{ "scope": "variable.other.sass",          "foreground":"var(css_none)" },
-//{ "scope": "variable.parameter",           "foreground":"var(bleu)", "font_style":"italic" },
-{ "scope": "variable.function",            "foreground":"#202020" },
+{ "scope": "variable",                       "foreground":"var(mauve)"},
+{ "scope": "variable.declaration.sass",      "foreground":"var(css_spec)"},
+{ "scope": "variable.function.js",           "foreground":"#0000a0"},
+{ "scope": "variable.function.sass",         "foreground":"var(bleudark)" },
+{ "scope": "variable.language",              "foreground":"var(self)" },
+{ "scope": "variable.language.this",         "foreground":"#a5008f", "font_style":"bold" },
+{ "scope": "variable.other",                 "foreground":"var(mauve)" },
+{ "scope": "variable.other.sass",            "foreground":"var(cyan)", "font_style":"italic" },
+ { "scope": "variable.parameter.sass",        "foreground":"var(cyan)", "font_style":"italic" },
+{ "scope": "variable.function",              "foreground":"#202020" },
 
 // html
 // { "scope": "entity.name.tag.custom.html",           "foreground":"#208020" }, // vue tags
