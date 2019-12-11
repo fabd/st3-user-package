@@ -1,5 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
+	"auto_match_enabled": false,
 	"bold_folder_labels": true,
 	"caret_style": "blink",
 	"color_scheme": "Packages/User/color-schemes/fabd.sublime-color-scheme",
