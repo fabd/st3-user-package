@@ -60,7 +60,7 @@
         // { "name": "...", "scope": "keyword", "font_style":"bold italic" }
 
 // BracketHighlighter plugin (cf. )
-{ "scope": "brackethighlighter.tag",       "foreground":"#ccc" },  // xhtml tags
+{ "scope": "brackethighlighter.tag",       "foreground":"#800080", "background":"#80008010" },  // xhtml tags
 { "scope": "brackethighlighter.curly",     "foreground":"#c4042d" },  // js blocks
 { "scope": "brackethighlighter.quote",     "foreground":"#1044d4" },  // single/double/regex quotes
 
@@ -103,9 +103,10 @@
 { "scope": "keyword.control.at-rule",      "foreground":"var(css_spec)" }, // css
 // { "scope": "keyword.control.at-rule.sass", "foreground":"var(cyan)" }, // css
 { "scope": "keyword.control.flow.conditional.sass", "foreground":"var(css_spec)" }, // css
+{ "scope": "keyword.control.export",       "foreground":"var(rouge)" },
 
 { "scope": "keyword.declaration",          "foreground":"#202020" },
-{ "scope": "keyword.operator",             "foreground":"#808080" }, // new
+{ "scope": "keyword.operator",             "foreground":"var(rouge)" },
 { "scope": "keyword.operator.ampersand.sass", "foreground":"var(rouge)" },
 { "scope": "keyword.operator.sass",        "foreground":"var(rouge)" }, // new
 { "scope": "keyword.other.phpdoc.php",     "foreground":"#167c9b" },
@@ -120,10 +121,11 @@
 // { "scope": "meta.object-literal.key.js",   "foreground":"#404040", "font_style":"italic" },
 // { "scope": "meta.object-literal.key.ts",   "foreground":"#404040", "font_style":"italic" },
 //{ "scope": "meta.selector.css",            "font_style":"bold" },
+{ "scope": "meta.property.object",         "foreground":"var(kw)" }, //cf. variable.other...
 { "scope": "meta.tag.custom.html",         "foreground":"#704040", "font_style":"underline" },
 
-{ "scope": "punctuation.definition.attribute", "foreground":"#c00000" },
-{ "scope": "punctuation.definition.attribute.html", "foreground":"#202020" },
+{ "scope": "punctuation.definition.attribute", "foreground":"var(rouge)" },
+// { "scope": "punctuation.definition.attribute.html", "foreground":"#202020" },
 { "scope": "punctuation.definition.block.ts", "foreground":"var(rouge)" },
 { "scope": "punctuation.definition.tag.begin.html", "foreground":"#800080" },
 { "scope": "punctuation.definition.tag.end.html",   "foreground":"#800080" },
@@ -164,8 +166,11 @@
 { "scope": "variable.function.js",           "foreground":"#0000a0"},
 { "scope": "variable.function.sass",         "foreground":"var(bleudark)" },
 { "scope": "variable.language",              "foreground":"var(self)" },
-{ "scope": "variable.language.this",         "foreground":"#a5008f", "font_style":"bold" },
-{ "scope": "variable.other",                 "foreground":"var(mauve)" },
+{ "scope": "variable.language.this",         "foreground":"#a5008f" },
+// { "scope": "variable.other",                 "foreground":"var(mauve)" },
+{ "scope": "variable.other.constant",        "foreground":"var(kw)" },
+{ "scope": "variable.other.object",          "foreground":"var(kw)" },
+{ "scope": "variable.other.readwrite",       "foreground":"var(kw)" },
 { "scope": "variable.other.sass",            "foreground":"var(mauve)", "font_style":"italic" },
 { "scope": "variable.parameter.sass",        "foreground":"var(cyan)", "font_style":"italic" },
 { "scope": "variable.function",              "foreground":"#202020" },

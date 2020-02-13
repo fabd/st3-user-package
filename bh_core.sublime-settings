@@ -36,7 +36,7 @@
       "icon": "none",
       // faB : customisé dans mon color scheme
       "color": "brackethighlighter.tag",
-      "style": "underline",
+      "style": "solid",
       "endpoint": true
     },
 
