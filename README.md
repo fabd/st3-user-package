@@ -4,8 +4,7 @@ Nothing to see here. Just a backup of my ST 3 config.
 
 `.gitignore`: https://github.com/4sStylZ/SublimeText3Settings
 
-
-```
+```bash
 $ cd ~/.config/sublime-text-3/Packages/User
 ```
 
@@ -23,10 +22,13 @@ $ cd ~/.config/sublime-text-3/Packages/User
 
 
 
-## Awesome Packages
+## Packages
 
 * [AllAutocomplete](https://github.com/alienhard/SublimeAllAutocomplete)
-
+* Highlight Matching Tag
+* Space Block Jumper (paragraph motions, as in vim)
+* Vim (VSCodeVim)
+* ...
 
 ## Notes
 
@@ -38,6 +40,6 @@ $ cd ~/.config/sublime-text-3/Packages/User
 - Launch > Ctrl Shift P > Install Package Control > Quit
 - `rm -rf ~/.config/sublime-text-3/Packages/User/` (git clone won't overwrite folder)
 - `git clone https://github.com/fabd/st3-user-package.git ~/.config/sublime-text-3/Packages/User/`
-- Launch Sublime Text -- it will restore packages (cf. `Package Control.sublime-settings` file)
+- Launch Sublime Text -- wait while it restores packages (cf. `Package Control.sublime-settings` file)
 
 - Review/Push/pull config updates with eg. Sublime Merge
