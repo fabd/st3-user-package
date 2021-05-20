@@ -14,10 +14,10 @@
   //    f9 et ctrl-f9    sort lines (on s'en tappe -- utilise le menu)
   // -------------------------------------------------------------------
 
-  // (2021) : DISABLE BECAUSE SWITCHING TO QWERTY
   // fix "/" (azerty) -- same key
-  //{ "keys": ["ctrl+:"], "command": "toggle_comment", "args": { "block": false } },
-  //{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
+  { "keys": ["ctrl+:"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["ctrl+shift+:"], "command": "toggle_comment", "args": { "block": true } },
+  { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
 
   // show_files : comme fuzzyfinder dans Vim
   { "keys": ["ctrl+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
