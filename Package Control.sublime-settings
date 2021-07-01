@@ -12,6 +12,7 @@
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"Dotfiles Syntax Highlighting",
+		"INI",
 		"JsPrettier",
 		"MarkdownEditing",
 		"Package Control",
@@ -24,5 +25,5 @@
 		"Vintage Surround",
 		"Vue Syntax Highlight",
 		"WordHighlight"
-	]
+	],
 }

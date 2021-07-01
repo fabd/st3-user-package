@@ -7,11 +7,12 @@
 	"draw_centred": false,
 	"draw_indent_guides": false,
 	"font_face": "'Monospace', 'Ubuntu Mono', 'Droid Sans Mono', 'Droid Sans Fallback'",
-	"font_size": 10,
+	"font_size": 12,
 	"gutter": true,
 	"highlight_modified_tabs": false,
 	"ignored_packages":
 	[
+		"Markdown",
 	],
 	"line_numbers": true,
 	"line_padding_bottom": 1,
@@ -31,5 +32,5 @@
 	"update_check": false,
 	"vintage_start_in_command_mode": true,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "true"
+	"word_wrap": "true",
 }
