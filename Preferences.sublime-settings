@@ -6,8 +6,8 @@
 	"color_scheme": "Packages/User/color-schemes/fabd.sublime-color-scheme",
 	"draw_centred": false,
 	"draw_indent_guides": false,
-	"font_face": "'Monospace', 'Ubuntu Mono', 'Droid Sans Mono', 'Droid Sans Fallback'",
-	"font_size": 12,
+	"font_face": "Menlo",
+	"font_size": 16,
 	"gutter": true,
 	"highlight_modified_tabs": false,
 	"ignored_packages":
