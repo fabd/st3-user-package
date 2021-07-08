@@ -1,0 +1,76 @@
+[
+  // -------------------------------------------------------------------
+  //  UNWANTED DEFAULTS
+  // -------------------------------------------------------------------
+  { "keys": ["ctrl+q"], "command": "" },
+
+  // -------------------------------------------------------------------
+  //  REMAPS
+  // 
+  //  Remplace ces defaults:
+  //  
+  //    ctrl t           transpose 
+  //    ctrl j           join lines
+  //    f9 et ctrl-f9    sort lines (on s'en tappe -- utilise le menu)
+  // -------------------------------------------------------------------
+
+  // fix "/" (azerty) -- same key
+  { "keys": ["super+:"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["super+shift+:"], "command": "toggle_comment", "args": { "block": true } },
+  //{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
+
+  // show_files : comme fuzzyfinder dans Vim
+  { "keys": ["ctrl+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  
+  // F5 au lieu de ctrl+s (confort)
+  { "keys": ["f5"], "command": "save" },
+
+  // Ctrl Shift O  pour changer de repo, pour être consistent avec Sublime Merge
+  { "keys": ["super+shift+o"], "command": "prompt_select_workspace" },
+
+  // Toggle the side bar (comme dans Nautilus)
+  { "keys": ["f9"], "command": "toggle_side_bar" },
+
+  // ctrl+d  same as ctrl+del
+  // { "keys": ["ctrl+d"], "command": "delete_word", "args": { "forward": true } },
+
+  // -------------------------------------------------------------------
+  //  NEW BINDINGS
+  // -------------------------------------------------------------------
+
+  // Reveal current file in the sidebar tree
+  { "keys": ["ctrl+f9"], "command": "reveal_in_side_bar" },
+
+  // move by paragraph (comme Vim en command mode)
+  {"keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false}},
+  {"keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true}},
+  // ... avec shift pour sélectionner des blocks
+  {"keys": ["shift+alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false, "extend": true}},
+  {"keys": ["shift+alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true, "extend": true}},
+
+  // -------------------------------------------------------------------
+  //  MACROS
+  // -------------------------------------------------------------------
+  
+  // emulating "piece wise copying line above" (doesn't really work)
+  //{ "keys": ["ctrl+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Piece-wise-copying-line-above.sublime-macro"}},
+
+  // -------------------------------------------------------------------
+  //  PLUGINS / MISC
+  // -------------------------------------------------------------------
+
+  // npm i -D prettier
+  { "keys": ["ctrl+shift+f"], "command": "js_prettier" },
+
+  // utile pour développer color scheme
+  { "keys": ["ctrl+shift+s"], "command": "show_scope_name" },
+
+  // Sublime Alignment
+  { "keys": ["ctrl+alt+a"], "command": "alignment" },
+
+  // -------------------------------------------------------------------
+  //  DELETE?
+  // -------------------------------------------------------------------
+  
+  //{ "keys": ["ctrl+s"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Escape-Vintage-and-Save.sublime-macro"}},
+]
