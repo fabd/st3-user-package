@@ -14,9 +14,11 @@
   //    f9 et ctrl-f9    sort lines (on s'en tappe -- utilise le menu)
   // -------------------------------------------------------------------
 
-  // fix "/" (azerty) -- same key
+  // (azerty, macos) la touche `:/`
   { "keys": ["super+:"], "command": "toggle_comment", "args": { "block": false } },
   { "keys": ["super+shift+:"], "command": "toggle_comment", "args": { "block": true } },
+  
+  // (pas sur si c'était pour qwerty?)
   //{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
 
   // show_files : comme fuzzyfinder dans Vim

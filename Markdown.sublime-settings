@@ -16,7 +16,7 @@
 	"mde.auto_increment_ordered_list_number": true,
 	"mde.distraction_free_mode":
 	{
-		"mde.keep_centered": true
+		"mde.keep_centered": true,
 	},
 	"mde.keep_centered": false,
 	"mde.lint":
@@ -36,8 +36,8 @@
 			"ol_multi": 1,
 			"ol_single": 1,
 			"ul_multi": 1,
-			"ul_single": 1
-		}
+			"ul_single": 1,
+		},
 	},
 	"mde.list_indent_auto_switch_bullet": true,
 	"mde.list_indent_bullets":
@@ -54,5 +54,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": false,
 	"word_wrap": true,
-	"wrap_width": 120
+	"wrap_width": 120,
 }
