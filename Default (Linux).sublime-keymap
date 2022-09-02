@@ -14,10 +14,9 @@
   //    f9 et ctrl-f9    sort lines (on s'en tappe -- utilise le menu)
   // -------------------------------------------------------------------
 
-  // fix "/" (azerty) -- same key
-  { "keys": ["ctrl+:"], "command": "toggle_comment", "args": { "block": false } },
-  { "keys": ["ctrl+shift+:"], "command": "toggle_comment", "args": { "block": true } },
-  { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": true } },
+  // toggle comments line & block (azerty)
+  { "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
 
   // show_files : comme fuzzyfinder dans Vim
   { "keys": ["ctrl+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
@@ -25,7 +24,7 @@
   // F5 au lieu de ctrl+s (confort)
   { "keys": ["f5"], "command": "save" },
 
-  // Ctrl Shift O  pour changer de repo, pour être consistent avec Sublime Merge
+  // Ctrl Shift o  pour changer de repo, pour être consistent avec Sublime Merge
   { "keys": ["ctrl+shift+o"], "command": "prompt_select_workspace" },
 
   // Toggle the side bar (comme dans Nautilus)
@@ -33,6 +32,12 @@
 
   // ctrl+d  same as ctrl+del
   // { "keys": ["ctrl+d"], "command": "delete_word", "args": { "forward": true } },
+
+  // -------------------------------------------------------------------
+  // SEARCH & REPLACE
+  // -------------------------------------------------------------------
+  // ctrl shfit h    replace match (comme dans VSCode)
+  { "keys": ["ctrl+shift+h"], "command": "replace_next" },
 
   // -------------------------------------------------------------------
   //  NEW BINDINGS
@@ -52,7 +57,7 @@
   //  MACROS
   // -------------------------------------------------------------------
   
-  // emulating "piece wise copying line above" (doesn't really work)
+  // emulating "piece wise copying line above" (sort of)
   { "keys": ["ctrl+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/Macro Piece-wise-copying-line-above.sublime-macro"}},
 
   // -------------------------------------------------------------------
