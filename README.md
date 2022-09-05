@@ -1,11 +1,11 @@
-# Sublime Text 3 Config
+# Sublime Text Config
 
-Nothing to see here. Just a backup of my ST 3 config.
+Nothing to see here. Just a backup of my Sublime Text config.
 
 `.gitignore`: https://github.com/4sStylZ/SublimeText3Settings
 
 ```bash
-$ cd ~/.config/sublime-text-3/Packages/User
+$ cd ~/.config/sublime-text/Packages/User
 ```
 
 ## Configs
@@ -36,10 +36,10 @@ $ cd ~/.config/sublime-text-3/Packages/User
 
 ## Restore / Install to new setup
 
-- Install Sublime Text 3
+- Install Sublime Text
 - Launch > Ctrl Shift P > Install Package Control > Quit
-- `rm -rf ~/.config/sublime-text-3/Packages/User/` (git clone won't overwrite folder)
-- `git clone https://github.com/fabd/st3-user-package.git ~/.config/sublime-text-3/Packages/User/`
+- `rm -rf ~/.config/sublime-text/Packages/User/` (git clone won't overwrite folder)
+- `git clone https://github.com/fabd/st3-user-package.git ~/.config/sublime-text/Packages/User/`
 - Launch Sublime Text -- wait while it restores packages (cf. `Package Control.sublime-settings` file)
 
 - Review/Push/pull config updates with eg. Sublime Merge
